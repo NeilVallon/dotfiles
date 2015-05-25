@@ -11,6 +11,9 @@ alias __B="^N" # arrow key for the next command
 alias __C="^F" # arrow key for one character forwards
 alias __D="^B" # arrow key for one character backwards
 
+bind -m '^L'=clear'^J'
+
+
 PS1='`hostname -s`:`basename $PWD`[`git branch 2>/dev/null | sed -e ""/^[^*]/d"" -e "s/\* \(.*\)/\1/"`] `whoami`\$ '
 
 
